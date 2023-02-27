@@ -107,7 +107,7 @@ class AdsManagerOpenAd(
             }
 
             override fun onAdFailedToLoad(error: String?) {
-                callbackOpenAd?.onAdFailedToLoad(error)
+                if (secondaryNetwork == null) callbackOpenAd?.onAdFailedToLoad(error)
                 secondaryNetwork?.let {
                     handleShow(
                         activity,
@@ -119,7 +119,7 @@ class AdsManagerOpenAd(
                             }
 
                             override fun onAdFailedToLoad(error: String?) {
-                                callbackOpenAd?.onAdFailedToLoad(error)
+                                if (tertiaryNetwork == null) callbackOpenAd?.onAdFailedToLoad(error)
                                 tertiaryNetwork?.let {
                                     handleShow(
                                         activity,
@@ -131,7 +131,7 @@ class AdsManagerOpenAd(
                                             }
 
                                             override fun onAdFailedToLoad(error: String?) {
-                                                callbackOpenAd?.onAdFailedToLoad(error)
+                                                if (quaternaryNetwork == null) callbackOpenAd?.onAdFailedToLoad(error)
                                                 quaternaryNetwork?.let {
                                                     handleShow(
                                                         activity,
