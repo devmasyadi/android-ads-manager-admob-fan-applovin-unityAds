@@ -25,20 +25,20 @@ class MainActivity : AppCompatActivity() {
     private val primaryAds = NetworkAds.ADMOB
     private val secondaryAds = NetworkAds.ADMOB
     private val tertiaryAds = NetworkAds.APPLOVIN_MAX
-    private val quaternaryAds = NetworkAds.START_IO
+    private val quaternaryAds = NetworkAds.UNITY_ADS
 
     private val adUnitOpenAdId = "208690301"
 
     private val primaryAppId = ""
     private val secondaryAppId = ""
     private val tertiaryAppId = "208690301"
-    private val quaternaryAppId = "208690301"
+    private val quaternaryAppId = "4786646"
 
     private val primaryBannerId = "ca-app-pub-3940256099942544/6300978111XXX"
-    private val secondaryBannerId = "ca-app-pub-3940256099942544/6300978111"
+    private val secondaryBannerId = "ca-app-pub-3940256099942544/6300978111XX"
 //    private val secondaryBannerId = "1363711600744576_1363713000744436"
     private val tertiaryBannerId = "XXX"
-    private val quaternaryBannerId = "62c9e910bbd85680"
+    private val quaternaryBannerId = "Banner_Android"
 
     private val primaryInterstitialId = "ca-app-pub-3940256099942544/1033173712"
     private val secondaryInterstitialId = "ca-app-pub-3940256099942544/1033173712"

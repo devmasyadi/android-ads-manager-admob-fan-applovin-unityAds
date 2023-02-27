@@ -9,7 +9,7 @@ import com.adsmanager.applovin.ApplovinDiscoveryAds
 import com.adsmanager.applovin.ApplovinMaxAds
 import com.adsmanager.applovin.ApplovinOpenAds
 import com.adsmanager.fan.FanAds
-import com.adsmanager.startio.StartIoAds
+import com.adsmanager.unityAdsModule.UnityAdsModule
 import org.koin.dsl.module
 
 val adsManagerModule = module {
@@ -17,9 +17,10 @@ val adsManagerModule = module {
     single { FanAds() }
     single { ApplovinMaxAds() }
     single { ApplovinDiscoveryAds() }
-    single { StartIoAds() }
+    single { UnityAdsModule() }
     single { HandleAds(get(), get(), get(), get(), get()) }
     single { AdsManager(get()) }
+    single { AdmobOpenAd() }
     single { ApplovinOpenAds(get()) }
     single { AdsManagerOpenAd(get(), get()) }
 }
